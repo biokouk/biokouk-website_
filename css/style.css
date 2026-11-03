@@ -2137,10 +2137,6 @@ header .logo,
         min-height: auto;
     }
 
-    .solutions-area-tags {
-        margin-top: 35px;
-    }
-
     .solutions-evaluate-item,
     .solutions-evaluate-item:nth-child(3n),
     .solutions-evaluate-item:nth-child(2n) {
@@ -3995,4 +3991,220 @@ header .logo,
         font-size: 15px;
         line-height: 1.7;
     }
+}/* ========================================
+   LANGUAGE SWITCH
+======================================== */
+
+.language-switch {
+     display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-left: 70px;
+    margin-right: 0;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+.language-switch a {
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.language-switch a:hover {
+    color: #168a43;
+}
+
+.language-switch a.active {
+    color: #168a43;
+}
+
+.language-switch span {
+    color: #d0d0d0;
+    font-weight: 400;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+    .language-switch {
+        margin-left: auto;
+        margin-right: 18px;
+        gap: 6px;
+        font-size: 11px;
+    }
+
+}
+/* ========================================
+   DESKTOP HEADER ALIGNMENT
+======================================== */
+
+@media (min-width: 901px) {
+
+    .nav-container {
+        position: relative;
+    }
+
+    .nav {
+    margin-left: auto;
+    margin-right: 70px;
+}
+
+.nav-button {
+    flex-shrink: 0;
+    position: relative;
+    left: -35px;
+    transform: none;
+}
+
+    .language-switch {
+        position: absolute;
+        left: calc(100% + 55px);
+
+        margin: 0;
+        top: 50%;
+        transform: translateY(-50%);
+
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        white-space: nowrap;
+    }
+
+}/* Greek hero typography */
+.greek-page .hero h1 {
+    line-height: 1.02;
+}/* Market cards title alignment */
+.market-content h3 {
+    min-height: 2.4em;
+}/* About section highlight */
+.about-content h2 span {
+    color: #168a43;
+}/* Align solution card tags at the bottom */
+
+.solution-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.solution-card .solution-tags {
+    margin-top: auto;
+}/* Ευθυγράμμιση ετικετών στις κάρτες Solutions */
+
+.solutions-area-card {
+    display: flex;
+    flex-direction: column;
+}
+/* Greek CTA heading - better line spacing */
+.greek-page .cta h2 {
+    line-height: 1.12;
+}/* Insights page image styling */
+.insights-page-image {
+    display: block;
+    overflow: hidden;
+    border-radius: 20px;
+}/* =========================================
+/* Tablet: Process section heading */
+/* Tablet: Process section heading — Greek & English */
+@media (min-width: 601px) and (max-width: 900px) {
+    .process .section-heading {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .process .section-heading > div,
+    .process .section-heading > p {
+        width: 100%;
+        max-width: 100%;
+    }
+}/* Greek Solutions — Tablet layout */
+@media (min-width: 701px) and (max-width: 1000px) {
+
+    .greek-page .solutions-areas-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .greek-page .solutions-area-card {
+        min-width: 0;
+        min-height: 420px;
+        padding: 32px 24px;
+        border-bottom: 1px solid #d8d8d3;
+    }
+
+    .greek-page .solutions-area-card:nth-child(odd) {
+        padding-left: 0;
+    }
+
+    .greek-page .solutions-area-card:nth-child(even) {
+        border-right: none;
+    }
+
+    .greek-page .solutions-area-card h3 {
+        font-size: 23px;
+        min-height: 0;
+    }
+}
+/* Solutions cards — tablet and mobile */
+@media (max-width: 900px) {
+    .greek-page .solutions-areas-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .greek-page .solutions-area-card {
+        min-width: 0;
+    }
+}
+/* Greek solutions — tablet card content */
+@media (min-width: 701px) and (max-width: 900px) {
+    .greek-page .solutions-area-card p {
+        max-width: 100%;
+    }
+}/* Solutions — Application section on tablet (Greek & English) */
+@media (min-width: 701px) and (max-width: 900px) {
+
+    .solutions-application-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .solutions-application-grid h2,
+    .solutions-application-content {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+    .greek-page .solutions-application-content p {
+        max-width: 100%;
+    }
+}/* Greek Markets — tablet: final card alignment */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .greek-page .markets-factors-grid .markets-factor {
+        display: grid;
+        grid-template-rows: 20px 56px auto;
+        align-content: start;
+        row-gap: 12px;
+    }
+
+    .greek-page .markets-factors-grid .markets-factor > span,
+    .greek-page .markets-factors-grid .markets-factor > h3,
+    .greek-page .markets-factors-grid .markets-factor > p {
+        margin: 0;
+    }
+
+    .greek-page .markets-factors-grid .markets-factor > h3 {
+        line-height: 1.25;
+    }
+
 }

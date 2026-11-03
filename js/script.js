@@ -11,7 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
         mobileCTA.href = "mailto:biokouk@outlook.com";
         mobileCTA.className = "mobile-nav-cta";
-        mobileCTA.textContent = "Let's Talk";
+        
+mobileCTA.textContent = document.documentElement.lang === "el"
+    ? "Ας μιλήσουμε"
+    : "Let's Talk";
 
         nav.appendChild(mobileCTA);
     }
